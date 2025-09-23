@@ -78,7 +78,7 @@ export default function FilePicker({ setFile }: FilePickerProps) {
     <div className="flex min-h-[400px] flex-col items-center justify-center space-y-20 p-8">
       <div className="border-1 border-dashed border-[#382e32] bg-[#2a2226] shadow-md hover:border-[#42373b] hover:bg-[#2b2326]">
         <button
-          className="px-24 py-4 text-[#c9a2b2] hover:cursor-pointer hover:text-white"
+          className="px-24 py-4 text-[#e9d6e0] hover:cursor-pointer hover:text-white"
           onClick={handleClick}
         >
           Drop an osu! file
@@ -94,7 +94,7 @@ export default function FilePicker({ setFile }: FilePickerProps) {
             {recentFiles.map((file) => (
               <button
                 key={file.absolutePath}
-                className="w-full rounded-md bg-[#2a2226] p-3 text-left text-sm text-[#c9a2b2] hover:bg-[#2b2326] hover:text-white"
+                className="w-full rounded-md bg-[#2a2226] p-3 text-left text-sm text-[#e9d6e0] hover:bg-[#2b2326] hover:text-white"
                 onClick={() => handleRecentFileClick(file.absolutePath)}
               >
                 <div className="truncate font-medium">{file.filename}</div>
